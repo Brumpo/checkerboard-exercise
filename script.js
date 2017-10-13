@@ -50,17 +50,23 @@
     tile.style.width = '11.1%';
     tile.style.float = 'left';
     tile.style.paddingBottom= '11.1%';
+
     var randcolor= randomcolor();
 //     console.log(randcolor)
     tile.style.backgroundColor=''+randcolor;
     document.body.appendChild(tile);
   }
   document.addEventListener('DOMContentLoaded', function (){
+    let jamz=document.createElement('audio');
+    jamz.src='Heartbeats.mp3';
+    jamz.autoplay='1';
+    jamz.display='0';
+    document.body.appendChild(jamz)
     let tile = document.getElementsByTagName('div');
     for(let i=0;i<tile.length;i++){
       window.setInterval(function(){
         tile[i].style.backgroundColor= ''+randomcolor() ? ''+randomcolor() : ''+randomcolor();
-      },2000)
+      },1417)
     }
   })
 
