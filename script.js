@@ -78,4 +78,4 @@ function randomcolor(){
     randcolor += letters[Math.floor(Math.random() * 16)];
   }
   return randcolor;
-}//
+}//changes
